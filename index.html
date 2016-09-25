@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.0.3/milligram.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <title>Dillon Beliveau</title>
+        <style type="text/css">
+            div.bg {
+                background-image: url(img/me.jpg);
+                background-position:center;
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-attachment:fixed;
+                width: 100%;
+                height: 100%;
+                position:absolute;
+            }
+            h1,p {
+                background-color:white;
+            }
+            div.caption {
+                position:absolute;
+                left:0;
+                top:50%;
+                width:100%;
+                text-align:center;
+            }
+            div.caption > span {
+                background-color: #111;
+                color: #fff;
+                padding: 18px;
+                font-size: 25px;
+                letter-spacing: 10px;
+            }
+            div.offset {
+                position:absolute;
+                top: 100%;
+                padding-top: 20px;
+                width:100%;
+            }
+            div.container > div.row {
+                max-width: 80.0rem;
+                margin:auto;
+            }
+            div.soclinks div.column {
+                text-align:center;
+            }
+            a > i {
+                color: #111;
+            }
+            div.scrolldown {
+                position:absolute;
+                padding:30px;
+                right:0px;
+                bottom:0px;
+                font-weight:bold;
+                color: #fff;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+            .obnoxious {
+                animation: blinker 5s linear infinite;
+            }
+
+            @keyframes blinker {
+                50% { opacity: 0.4; }
+            }
+
+        </style>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(window).scroll(function() {
+                    $("div.scrolldown").css("display","none");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="bg">
+            <div class="caption"><span>Dillon Beliveau</span></div>
+        </div>
+        <div class="scrolldown">
+            <i class="obnoxious fa fa-angle-double-down fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="offset">
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <h1>Hi, my name is Dillon Beliveau.</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <p>Right now I'm a senior at the <a href="https://www.uvm.edu/">University of Vermont</a> pursuing a Bachelor of Science in Computer Science.</p>
+                        <p>I'm also interning at <a href="http://www.dealer.com">Dealer.com</a> working with the advertising team.</p>
+                        <p>I've made some cool stuff and have put it on my <a href="https://github.com/Dillonb">GitHub</a> account, like this little <a href="https://github.com/Dillonb/chip8">CHIP-8 bytecode interpreter</a> that I made in C.</p>
+                        <p>I'm probably way too into Linux and Vim, although I have been using Emacs with evil-mode recently. I run Arch Linux and have been known to spend hours editing <a href="https://github.com/dillonb/.dotfiles">configuration files</a> for the fun of it. <a href="https://i3wm.org/">i3</a> is my tiling window manager of choice.</p>
+                        <p>If you want to talk to me, please feel free to email me at dillonbeliveau AT gmail DOT com. I also hang around on Freenode sometimes as dillonb.</p>
+                    </div>
+                </div>
+                <div class="row soclinks">
+                    <div class="column"><a href="https://github.com/Dillonb"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a></div>
+                    <div class="column"><a href="https://twitter.com/dgbeliveau"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a></div>
+                    <div class="column"><a href="https://www.linkedin.com/in/dillon-beliveau"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a></div>
+                    <div class="column"><a href="http://www.last.fm/user/Dillongb"><i class="fa fa-lastfm-square fa-4x" area-hidden="true"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
